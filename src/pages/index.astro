@@ -1,0 +1,129 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@/components/sections/landing/HeroSection.astro";
+import ClientsSection from "@/components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@/components/sections/features/FeaturesGeneral.astro";
+import TestimonialsSection from "@/components/sections/testimonials/TestimonialsSection.astro";
+import PricingSection from "@/components/sections/pricing/PricingSection.astro";
+import FAQ from "@/components/sections/FAQ.astro";
+import heroImage from "@/images/hero-image.png";
+// import heroImage from "@/components/ui/icons/hero-image.astro"
+import faqs from "@/data_files/faqs.json";
+import features from "@/data_files/features.json";
+import pricing from "@/data_files/pricing.json";
+import featureImage from "@/images/features-image.avif";
+
+
+const avatarSrcs: Array<string> = [
+  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+];
+---
+
+<MainLayout>
+
+  <HeroSection
+    title=`Design your websites with <span
+        class="text-yellow-500 dark:text-yellow-400">Danfe Solutions</span>`
+    subTitle="Premium website development and professional design services tailored to meet your requirements."
+    primaryBtn="Contact Team"
+    primaryBtnURL="/contact"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">4.8</span> / 5`
+    starCount={4}
+    reviews=`From Over <span class="font-bold">1.8k</span> Reviews`
+    src={heroImage}
+    alt="A visually engaging representation showcasing a variety of website designs."
+  />
+
+  <ClientsSection
+    title="Trusted by Thousands of Users"
+    subTitle="Experience the reliability chosen by Users."
+  />
+
+  <FeaturesGeneral
+    title="Meeting Users Requirements"
+    subTitle="At Danfe, we specialize in addressing the distinctive needs faced in the website development and digital marketing sectors. From innovative design tools to professional services, we are committed to assisting you in overcoming challenges and reaching your online objectives."
+    src={featureImage}
+    alt="ScrewFast products in floating boxes"
+    features={features}
+  />
+
+  <!-- <FeaturesNavs
+    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    tabs={[
+      {
+        heading: "Cutting-Edge Tools",
+        content:
+          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
+        svg: "tools",
+        src: tools,
+        alt: "Yellow and black heavy equipment on brown grass field",
+        first: true,
+      },
+      {
+        heading: "Intuitive Dashboards",
+        content:
+          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+        svg: "dashboard",
+        src: dashboard,
+        alt: "A screenshot or graphic representation of the intuitive dashboard",
+        second: true,
+      },
+      {
+        heading: "Robust Features",
+        content:
+          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+        svg: "house",
+        src: construction,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+    ]}
+  /> -->
+
+  <TestimonialsSection
+    title="Fast-Track Your Projects"
+    subTitle="At Danfe, we prioritize efficiency from the start. Get your website up and running quickly with our seamless onboarding process. Experience the swift evolution of online presence, redefining the pace of website development."
+    ;
+    testimonials={[
+      {
+        content:
+          "Danfe's exceptional customer service made a significant impact on our project. From friendly and productive discussions to a quick project kickoff, I am highly satisfied with the end result. Danfe is truly a game-changer in website building and support!",
+        author: "Nirmal Gajurel",
+        role: "",
+        avatarSrc:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/434px-Unknown_person.jpg",
+      },
+    ]}
+    statistics={[
+      {
+        count: "1000+",
+        description:
+          "satisfied customers — from blogs & portfolios to school and hotel management services",
+      },
+      {
+        count: "85%",
+        description:
+          "boost in project efficiency, revolutionizing our website development experience.",
+      },
+      {
+        count: "15.3%",
+        description:
+          "reduction in maintenance costs reported by long-term clients",
+      },
+      {
+        count: "2x",
+        description: "Faster website creation using innovative design solutions.",
+      },
+    ]}
+  />
+
+  <PricingSection pricing={pricing} />
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+</MainLayout>

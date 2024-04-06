@@ -1,0 +1,29 @@
+{
+  "subTitle": "Ask us anything about our services, and get factual responses.",
+  "faqs": [
+    {
+      "question": "What types of websites can Danfe create?",
+      "answer": "Danfe specializes in building various types of dynamic & static websites, including business websites, school & hotel management webservices, blogs, portfolios, and more. We tailor our services to meet your specific requirements."
+    },
+    {
+      "question": "How much does a website from Danfe cost?",
+      "answer": "The cost of a website depends on several factors such as the type of website, features required, design complexity, and project timeline. For a personalized quote, please reach out to us with details about your project. You can contact us through our website's contact form or message us on our social media platforms."
+    },
+    {
+      "question": "What is the process for getting a website developed by Danfe?",
+      "answer": "Our website development process begins with understanding your needs and goals. We'll discuss your project requirements, create a customized plan, design and develop your website, and provide ongoing support and maintenance as needed."
+    },
+    {
+      "question": "Can I update and manage my website after it's built?",
+      "answer": "Yes, we provide admin panel of your website so that you can make changes to your websites and we also provide the source code of the website. Based upon the discussion with the party, we can also agree on timely maintenance of website."
+    },
+    {
+      "question": "Does Danfe provide website hosting and domain registration?",
+      "answer": "While we are not direct suppliers of domain and hosting services, we can assist you in setting up everything according to your requirements. We will recommend suitable hosting options based on your website's needs and ensure the setup is done correctly. Please note that the additional costs for domain registration and hosting will be incurred by you, the client."
+    },
+    {
+      "question": "What kind of support does Danfe offer after the website is launched?",
+      "answer": "We provide comprehensive post-launch support to ensure your website continues to function optimally. Our team is available to assist with updates, troubleshooting, security enhancements, and any other website-related needs."
+    }
+  ]
+}
