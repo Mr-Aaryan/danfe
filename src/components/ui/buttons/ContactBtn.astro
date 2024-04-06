@@ -1,0 +1,16 @@
+---
+import Icon from "../icons/Icon.astro";
+const { href, title } = Astro.props;
+---
+<a href= {href}
+    class:list={[
+    "flex justify-between", 
+    "border border-black px-3 py-3 text-lg rounded my-1",
+    "hover:cursor-pointer hover:text-[#FFF] hover:bg-[#000]",
+    
+    ]}>
+    <span class=" font-semibold tracking-wide">{title}</span>
+    <i class=" my-auto">
+        <Icon name="arrowRight" />
+    </i>
+</a>

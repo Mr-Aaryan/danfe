@@ -2,7 +2,7 @@ import ogImageSrc from "@/images/social.png";
 
 export const SITE = {
   title: "Danfe Solutions",
-  tagline: "Top-quality Hardware Tools",
+  tagline: "Top-quality Website Building",
   description: "Premium website development and professional design services tailored to meet your requirements. ",
   description_short: "Develop premium websites with us",
   url: "https://danfe.pages.dev",

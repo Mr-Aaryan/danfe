@@ -21,13 +21,13 @@ const footerLinks = [
     links: [
       { name: "Facebook", url: "https://www.facebook.com/danfesolutions/" },
       { name: "Whatsapp", url: "https://wa.me/message/Q4SH6APVW7GCG1" },
-      { name: "+977-9824452633", url: "#" },
+      { name: "Email", url: "mailto:danfesolutions0@gmail.com" },
     ],
   },
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
+  facebook: "https://www.facebook.com/danfesolutions/",
   x: "https://twitter.com/",
   github: "https://github.com",
   google: "https://www.google.com/",
