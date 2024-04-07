@@ -7,14 +7,14 @@ import RightSection from "@/components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@/components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@/images/blueprints-image.avif";
-import personWorking from "@/images/person-working.avif";
-import beforeAfter from "@/images/before-after.avif";
-import constructionWorkers from "@/images/construction-workers.avif";
-import aerialView from "@/images/aerial-view.avif";
-import usingTools from "@/images/using-tools.avif";
-import progressBuilding from "@/images/progress-building.avif";
-import underConstruction from "@/images/under-construction.avif";
+import blueprints from "@/images/blueprints-image.png";
+import personWorking from "@/images/person-working.jpg";
+import beforeAfter from "@/images/before-after.jpg";
+import webDesigners from "@/images/design-team.jpg";
+import aerialView from "@/images/aerial-view.png";
+import usingTools from "@/images/using-tools.jpg";
+import showCaseI from "@/images/show-case-1.png";
+import underConstruction from "@/images/show-case-2.png";
 import { SITE } from "@/data_files/constants";
 
 interface Article {
@@ -36,9 +36,9 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
+    title: "Providing Expert Guidance",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "Starting a website project can feel overwhelming. With our professional consultation services, we guide you through each stage, ensuring informed decision-making. Whether you're a novice or an experienced developer, our experts are available to provide personalized advice on website features, project scope, and adherence to industry standards and regulations.",
     single: false,
     imgOne: blueprints,
     imgOneAlt: "Blueprints and digital tablet with construction plans.",
@@ -47,48 +47,44 @@ const articles: Article[] = [
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "Turning Designs into Reality",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "Our expert developers at Danfe transform your website designs into fully functional digital experiences. Whether it's implementing minor enhancements or executing complex features, we deliver reliable website construction services to bring your vision to life. We prioritize safety and craftsmanship, using top-quality tools and technologies to ensure the highest standards of performance and user experience.",
     img: beforeAfter,
     imgAlt: "Construction site before and after",
-    btnExists: true,
-    btnTitle: "Learn More",
-    btnURL: "#",
+    btnExists: false,
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Guiding Projects with Professional Oversight",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "At Danfe, we understand that effective project management is crucial for success. We offer comprehensive planning and robust management services to keep your website project on track and within budget. Let us take care of the intricacies of workflow coordination, resource allocation, and stakeholder communication while you stay focused on realizing your vision.",
     single: false,
-    imgOne: constructionWorkers,
+    imgOne: webDesigners,
     imgOneAlt: "Construction workers orchestrating a project",
     imgTwo: aerialView,
     imgTwoAlt: "Aerial view of managed construction",
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Ensuring Sustainable Performance",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "At Danfe, our dedication to your project extends beyond completion. We provide continuous maintenance and support services to ensure the long-term performance and sustainability of your website. Whether it's routine check-ups or urgent assistance, our responsive team is always available to deliver seamless support and keep your website running smoothly.",
     img: usingTools,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Developing Tailored Strategies for Unique Challenges",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "At Danfe, we specialize in crafting custom solutions for our enterprise clients to address specific industry challenges. By thoroughly understanding your unique needs, we design tailored strategies aimed at optimizing operations, improving efficiency, and propelling your business forward. Our goal is to deliver innovative solutions that align perfectly with your objectives and drive success in your industry.",
     single: false,
-    imgOne: progressBuilding,
+    imgOne: showCaseI,
     imgOneAlt: "In progress building structure",
     imgTwo: underConstruction,
     imgTwoAlt: "Brown and gray building under construction",
-    btnExists: true,
-    btnTitle: "Read more",
-    btnURL: "#",
+    btnExists: false,
   },
 ];
 
@@ -100,35 +96,27 @@ const pageTitle: string = `Services | ${SITE.title}`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    "@id": "https://danfe.pages.dev/services",
+    "url": "https://danfe.pages.dev/services",
+    "name": "Expert Consultation Services | Danfe",
+    "description": "Uniting expertise with your vision, Danfe provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
     "isPartOf": {
         "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+        "url": "https://danfe.pages.dev",
+        "name": "Danfe",
+        "description": "Danfe offers top-tier web development services to meet all your project needs."
     },
     "inLanguage": "en-US"
   }}
 >
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
+    title="Bringing Expertise Together with Your Vision"
+    subTitle="At Danfe, we are dedicated to offering comprehensive solutions and exceptional service in the website building and digital sector. Our experienced team is committed to supporting your project from concept to launch with a suite of specialized services."
     btnExists={true}
     btnTitle="Schedule a Consultation"
-    btnURL="#"
+    btnURL="https://www.facebook.com/danfesolutions"
   />
-  <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
-  They alternate for variety in design.
-  The 'btnExists' property is used to toggle the display of a button in these sections.
-  When btnExists={true}, a button is displayed.
-  This can be used to link to more detailed information or related resources.
-  RightSection can also conditionally render one or two images based on the 'single' property.
-  If 'single' is true, it displays one image, otherwise it displays two.
-  -->
   {
     articles.map(article => {
       return article.isRightSection ? (
@@ -160,16 +148,16 @@ const pageTitle: string = `Services | ${SITE.title}`;
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
     title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
+    subTitle="At Danfe, our dedication to quality and reliability shines through in every project we undertake. We are committed to providing industry-leading services that guarantee your website projects are built for long-term success and sustainability."
     mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with ScrewFast as exceptional"
+    mainStatSubTitle="of our clients rate their experience with Danfe as exceptional"
     stats={[
       {
         stat: "99.8%",
         description: "project completion rate",
       },
       {
-        stat: "5,000+",
+        stat: "100+",
         description: "successful installations",
       },
       {

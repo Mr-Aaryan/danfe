@@ -141,19 +141,5 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
       secondChoice="No"
     />
   </section>
-
-  <!--Related articles section-->
-  <section class="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-    <div class="mb-10 max-w-2xl">
-      <h2
-        class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
-      >
-        Related articles
-      </h2>
-    </div>
-
-    <div class="grid grid-cols-2 gap-6">
-      {relatedPosts.map((entry) => <CardRelated blogEntry={entry} />)}
-    </div>
-  </section>
+  
 </MainLayout>
