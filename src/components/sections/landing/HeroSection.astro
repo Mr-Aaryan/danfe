@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import PrimaryCTA from "../../ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "../../ui/buttons/SecondaryCTA.astro";
 import ReviewComponent from "../../ui/blocks/ReviewComponent.astro";
+import Hero from "../../ui/icons/Hero.astro";
 
 // Define props from Astro
 const {
@@ -18,8 +19,6 @@ const {
   starCount,
   rating,
   reviews,
-  src,
-  alt
 } = Astro.props;
 
 // Define TypeScript interface for props
@@ -35,8 +34,6 @@ interface Props {
   starCount?: number;
   rating?: string;
   reviews?: string;
-  src?: any;
-  alt?: string;
 }
 ---
 
@@ -79,16 +76,7 @@ interface Props {
   <!-- Hero Image Section -->
   <div class="flex w-full">
       <div class="top-12 overflow-hidden">
-	{src && alt &&
-	<Image
-        src={src}
-        alt={alt}
-        class="h-full w-full scale-110 object-cover object-center"
-        draggable={"false"}
-        loading={"eager"}
-        format={"avif"}
-	 />
-	}
+        <Hero />
     </div>
   </div>
 </section>
