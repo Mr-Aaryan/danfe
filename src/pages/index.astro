@@ -6,11 +6,11 @@ import ClientsSection from "@/components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@/components/sections/features/FeaturesGeneral.astro";
 import TestimonialsSection from "@/components/sections/testimonials/TestimonialsSection.astro";
 import PricingSection from "@/components/sections/pricing/PricingSection.astro";
+import Tech from "@/components/sections/landing/Tech.astro";
 import FAQ from "@/components/sections/FAQ.astro";
 import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
 import pricing from "@/data_files/pricing.json";
-import featureImage from "@/images/features-image.avif";
 
 ---
 
@@ -33,11 +33,11 @@ import featureImage from "@/images/features-image.avif";
     subTitle="Experience the reliability chosen by Users."
   />
 
+  <Tech />
+
   <FeaturesGeneral
     title="Meeting Users Requirements"
     subTitle="At Danfe, we specialize in addressing the distinctive needs faced in the website development and digital marketing sectors. From innovative design tools to professional services, we are committed to assisting you in overcoming challenges and reaching your online objectives."
-    src={featureImage}
-    alt="Danfe services are out of league"
     features={features}
   />
 

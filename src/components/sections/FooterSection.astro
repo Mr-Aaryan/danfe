@@ -4,7 +4,6 @@ import FooterSocialLink from "../ui/links/FooterSocialLink.astro";
 import enStrings from "@/utils/navigation.ts";
 import frStrings from "@/utils/fr/navigation.ts";
 import Icon from "../ui/icons/Icon.astro";
-import BrandLogo from "@/components/BrandLogo.astro";
 import { SITE } from "@/data_files/constants";
 
 // Select the correct translation based on the page's lang prop:
@@ -22,11 +21,9 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
     class="mx-auto w-full max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:pt-20 2xl:max-w-screen-2xl"
   >
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-      <div class="col-span-full lg:col-span-1">
-        <!-- Brand Logo -->
-        <BrandLogo class="h-auto w-32" />
+      <div class="col-span-full lg:col-span-1 text-xl font-bold dark:text-yellow-500">
+        Danfe Solutions
       </div>
-      <!-- An array of links for Product and Company sections -->
       {
         strings.footerLinks.map((section) => (
           <div class="col-span-2">
