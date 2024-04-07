@@ -2,7 +2,6 @@
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@/components/sections/landing/HeroSection.astro";
-import ClientsSection from "@/components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@/components/sections/features/FeaturesGeneral.astro";
 import TestimonialsSection from "@/components/sections/testimonials/TestimonialsSection.astro";
 import PricingSection from "@/components/sections/pricing/PricingSection.astro";
@@ -28,18 +27,13 @@ import pricing from "@/data_files/pricing.json";
     reviews=`From Over <span class="font-bold">100+</span> Reviews`
   />
 
-  <ClientsSection
-    title="Trusted by Users"
-    subTitle="Experience the reliability chosen by Users."
-  />
-
-  <Tech />
-
   <FeaturesGeneral
     title="Meeting Users Requirements"
     subTitle="At Danfe, we specialize in addressing the distinctive needs faced in the website development and digital marketing sectors. From innovative design tools to professional services, we are committed to assisting you in overcoming challenges and reaching your online objectives."
     features={features}
   />
+
+  <Tech />
 
     <TestimonialsSection
     title="Fast-Track Your Projects"

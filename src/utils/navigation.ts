@@ -11,9 +11,8 @@ const footerLinks = [
   {
     section: "Company",
     links: [
-      { name: "About us", url: "#" },
       { name: "Blog", url: "/blog" },
-      { name: "Services", url: "#" },
+      { name: "Services", url: "/services" },
     ],
   },
   {
@@ -28,10 +27,10 @@ const footerLinks = [
 // An object of links for social icons
 const socialLinks = {
   facebook: "https://www.facebook.com/danfesolutions/",
-  x: "https://twitter.com/",
-  github: "https://github.com",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  x: "#",
+  github: "#",
+  google: "#",
+  slack: "#",
 };
 
 export default {
